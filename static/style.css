@@ -1,3 +1,7 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,6 +25,10 @@ body {
 }
 
 
+/* =========================================
+   APP CONTAINER
+========================================= */
+
 .app-container {
 
     display:
@@ -35,7 +43,9 @@ body {
 }
 
 
-/* SIDEBAR */
+/* =========================================
+   SIDEBAR
+========================================= */
 
 .sidebar {
 
@@ -185,6 +195,9 @@ body {
     font-size:
         14px;
 
+    transition:
+        0.2s;
+
 }
 
 
@@ -198,6 +211,10 @@ body {
 
 }
 
+
+/* =========================================
+   MODEL CARD
+========================================= */
 
 .model-card {
 
@@ -258,10 +275,63 @@ body {
     border-radius:
         50%;
 
+    animation:
+        pulse
+        2s
+        infinite;
+
 }
 
 
-/* MAIN */
+@keyframes pulse {
+
+    0% {
+
+        box-shadow:
+            0 0 0 0
+            rgba(
+                34,
+                197,
+                94,
+                0.6
+            );
+
+    }
+
+
+    70% {
+
+        box-shadow:
+            0 0 0 8px
+            rgba(
+                34,
+                197,
+                94,
+                0
+            );
+
+    }
+
+
+    100% {
+
+        box-shadow:
+            0 0 0 0
+            rgba(
+                34,
+                197,
+                94,
+                0
+            );
+
+    }
+
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
 
 .main-content {
 
@@ -274,8 +344,15 @@ body {
     flex-direction:
         column;
 
+    min-width:
+        0;
+
 }
 
+
+/* =========================================
+   HEADER
+========================================= */
 
 .header {
 
@@ -304,6 +381,9 @@ body {
 
     font-size:
         24px;
+
+    color:
+        #1f2937;
 
 }
 
@@ -346,7 +426,9 @@ body {
 }
 
 
-/* CHAT */
+/* =========================================
+   CHAT CONTAINER
+========================================= */
 
 .chat-container {
 
@@ -361,6 +443,10 @@ body {
 
 }
 
+
+/* =========================================
+   WELCOME CARD
+========================================= */
 
 .welcome-card {
 
@@ -413,6 +499,9 @@ body {
     margin-bottom:
         15px;
 
+    color:
+        #1f2937;
+
 }
 
 
@@ -426,6 +515,10 @@ body {
 
 }
 
+
+/* =========================================
+   SUGGESTION GRID
+========================================= */
 
 .suggestion-grid {
 
@@ -481,10 +574,21 @@ body {
     transform:
         translateY(-2px);
 
+    box-shadow:
+        0 8px 20px
+        rgba(
+            99,
+            102,
+            241,
+            0.12
+        );
+
 }
 
 
-/* CHAT MESSAGE */
+/* =========================================
+   CHAT MESSAGE WRAPPER
+========================================= */
 
 .message {
 
@@ -503,13 +607,21 @@ body {
 }
 
 
+/* =========================================
+   USER MESSAGE
+========================================= */
+
 .user-message {
 
     align-self:
         flex-end;
 
     background:
-        #6366f1;
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #4f46e5
+        );
 
     color:
         white;
@@ -526,8 +638,24 @@ body {
     max-width:
         75%;
 
+    line-height:
+        1.6;
+
+    box-shadow:
+        0 5px 15px
+        rgba(
+            99,
+            102,
+            241,
+            0.2
+        );
+
 }
 
+
+/* =========================================
+   AI MESSAGE
+========================================= */
 
 .ai-message {
 
@@ -535,7 +663,7 @@ body {
         white;
 
     padding:
-        20px;
+        22px;
 
     border-radius:
         18px
@@ -558,10 +686,418 @@ body {
             0.04
         );
 
+    border:
+        1px solid #eef2f7;
+
 }
 
 
-/* INPUT */
+/* =========================================
+   AI MESSAGE HEADER
+========================================= */
+
+.ai-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding-bottom:
+        14px;
+
+    margin-bottom:
+        16px;
+
+    border-bottom:
+        1px solid #eef2ff;
+
+}
+
+
+.ai-icon {
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f5f3ff
+        );
+
+    border-radius:
+        12px;
+
+}
+
+
+.ai-header strong {
+
+    font-size:
+        17px;
+
+    color:
+        #4f46e5;
+
+}
+
+
+.ai-status {
+
+    margin-left:
+        auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #f0fdf4
+        );
+
+    color:
+        #16a34a;
+
+    font-size:
+        12px;
+
+    font-weight:
+        bold;
+
+    padding:
+        6px 10px;
+
+    border-radius:
+        20px;
+
+}
+
+
+/* =========================================
+   AI RESPONSE
+========================================= */
+
+.ai-response {
+
+    color:
+        #374151;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================
+   NUMBERED AI RESPONSE
+========================================= */
+
+.ai-number-item {
+
+    display:
+        flex;
+
+    /* Center the number circle vertically with the content */
+    align-items:
+        center;
+
+    gap:
+        14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8faff,
+            #f5f3ff
+        );
+
+    border:
+        1px solid #e0e7ff;
+
+    border-radius:
+        14px;
+
+    padding:
+        16px;
+
+    margin:
+        14px 0;
+
+    transition:
+        0.2s;
+
+}
+
+
+.ai-number-item:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            99,
+            102,
+            241,
+            0.12
+        );
+
+}
+
+
+.number-badge {
+
+    /* Fixed circular badge */
+    width:
+        38px;
+
+    min-width:
+        38px;
+
+    height:
+        38px;
+
+    flex-shrink:
+        0;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #8b5cf6
+        );
+
+    color:
+        white;
+
+    font-weight:
+        bold;
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 4px 10px
+        rgba(
+            99,
+            102,
+            241,
+            0.25
+        );
+
+}
+
+
+.number-content {
+
+    flex:
+        1;
+
+    /* Remove top offset so text aligns naturally with the centered badge */
+    padding-top:
+        0;
+
+    color:
+        #374151;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================
+   BULLET AI RESPONSE
+========================================= */
+
+.ai-bullet-item {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    gap:
+        10px;
+
+    background:
+        #f8fafc;
+
+    border-left:
+        4px solid #6366f1;
+
+    padding:
+        12px 15px;
+
+    margin:
+        10px 0;
+
+    border-radius:
+        8px;
+
+    color:
+        #374151;
+
+}
+
+
+.bullet-icon {
+
+    font-size:
+        16px;
+
+    line-height:
+        1.6;
+
+}
+
+
+/* =========================================
+   IMPORTANT TEXT
+========================================= */
+
+.important-text {
+
+    display:
+        inline-block;
+
+    background:
+        #fff7ed;
+
+    color:
+        #ea580c;
+
+    font-weight:
+        bold;
+
+    padding:
+        3px 8px;
+
+    border-radius:
+        6px;
+
+}
+
+
+/* =========================================
+   THINKING ANIMATION
+========================================= */
+
+.thinking {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        4px;
+
+    color:
+        #6366f1;
+
+    font-size:
+        15px;
+
+    font-weight:
+        500;
+
+    padding:
+        5px 0;
+
+}
+
+
+.dot {
+
+    animation:
+        blink
+        1.4s
+        infinite;
+
+}
+
+
+.dot:nth-child(2) {
+
+    animation-delay:
+        0.2s;
+
+}
+
+
+.dot:nth-child(3) {
+
+    animation-delay:
+        0.4s;
+
+}
+
+
+.dot:nth-child(4) {
+
+    animation-delay:
+        0.6s;
+
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+
+        opacity:
+            0.2;
+
+    }
+
+
+    50% {
+
+        opacity:
+            1;
+
+    }
+
+}
+
+
+/* =========================================
+   INPUT SECTION
+========================================= */
 
 .input-section {
 
@@ -600,6 +1136,26 @@ body {
     padding:
         7px;
 
+    transition:
+        0.2s;
+
+}
+
+
+.input-box:focus-within {
+
+    border-color:
+        #6366f1;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            99,
+            102,
+            241,
+            0.1
+        );
+
 }
 
 
@@ -623,6 +1179,9 @@ body {
     font-size:
         15px;
 
+    color:
+        #1f2937;
+
 }
 
 
@@ -635,7 +1194,11 @@ body {
         none;
 
     background:
-        #6366f1;
+        linear-gradient(
+            135deg,
+            #6366f1,
+            #4f46e5
+        );
 
     color:
         white;
@@ -649,13 +1212,18 @@ body {
     font-size:
         20px;
 
+    transition:
+        0.2s;
+
 }
 
 
 .input-box button:hover {
 
-    background:
-        #4f46e5;
+    transform:
+        scale(
+            1.05
+        );
 
 }
 
@@ -676,15 +1244,61 @@ body {
 
 }
 
+
 .contact-text {
-    text-align: center;
-    font-size: 13px;
-    color: #8a94a6;
-    margin-top: 5px;
-    margin-bottom: 8px;
+
+    text-align:
+        center;
+
+    font-size:
+        13px;
+
+    color:
+        #8a94a6;
+
+    margin-top:
+        5px;
+
+    margin-bottom:
+        8px;
+
 }
 
-/* MOBILE */
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.chat-container::-webkit-scrollbar {
+
+    width:
+        8px;
+
+}
+
+
+.chat-container::-webkit-scrollbar-track {
+
+    background:
+        transparent;
+
+}
+
+
+.chat-container::-webkit-scrollbar-thumb {
+
+    background:
+        #c7d2fe;
+
+    border-radius:
+        10px;
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
 
 @media (
     max-width:
@@ -698,12 +1312,14 @@ body {
 
     }
 
+
     .header {
 
         padding:
-            20px;
+            18px 20px;
 
     }
+
 
     .header h1 {
 
@@ -712,12 +1328,30 @@ body {
 
     }
 
+
+    .header p {
+
+        font-size:
+            13px;
+
+    }
+
+
+    .ai-badge {
+
+        display:
+            none;
+
+    }
+
+
     .chat-container {
 
         padding:
             20px;
 
     }
+
 
     .welcome-card {
 
@@ -726,10 +1360,120 @@ body {
 
     }
 
+
+    .welcome-card h2 {
+
+        font-size:
+            22px;
+
+    }
+
+
     .suggestion-grid {
 
         grid-template-columns:
             1fr;
+
+    }
+
+
+    .user-message {
+
+        max-width:
+            90%;
+
+    }
+
+
+    .ai-message {
+
+        padding:
+            16px;
+
+    }
+
+
+    .ai-header {
+
+        gap:
+            8px;
+
+    }
+
+
+    .ai-header strong {
+
+        font-size:
+            15px;
+
+    }
+
+
+    .ai-status {
+
+        font-size:
+            10px;
+
+        padding:
+            5px 8px;
+
+    }
+
+
+    .ai-number-item {
+
+        padding:
+            13px;
+
+        gap:
+            10px;
+
+    }
+
+
+    .number-badge {
+
+        width:
+            32px;
+
+        min-width:
+            32px;
+
+        height:
+            32px;
+
+        flex-shrink:
+            0;
+
+        font-size:
+            13px;
+
+    }
+
+
+    .number-content {
+
+        font-size:
+            14px;
+
+    }
+
+
+    .ai-bullet-item {
+
+        padding:
+            10px 12px;
+
+        font-size:
+            14px;
+
+    }
+
+
+    .input-section {
+
+        padding:
+            15px 20px;
 
     }
 
