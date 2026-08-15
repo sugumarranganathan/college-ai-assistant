@@ -2,7 +2,9 @@
 
 ## 🤖 AI & Technologies Used
 
-**Fine-Tuned Gemini 2.5 Flash | Vertex AI | FastAPI | Python | HTML | CSS | JavaScript | Docker | Google Cloud Run**
+**Fine-Tuned Gemini 2.5 Flash | Google Vertex AI | Google Gen AI SDK | FastAPI | Python | HTML | CSS | JavaScript | Docker | Google Cloud Run**
+
+---
 
 An AI-powered college information assistant designed to provide quick and intelligent answers about **Bright Future College of Engineering**.
 
