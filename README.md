@@ -1,5 +1,9 @@
 # 🎓 Bright Future College AI Chatbot
 
+## 🤖 AI & Technologies Used
+
+**Fine-Tuned Gemini 2.5 Flash | Vertex AI | FastAPI | Python | HTML | CSS | JavaScript | Docker | Google Cloud Run**
+
 An AI-powered college information assistant designed to provide quick and intelligent answers about **Bright Future College of Engineering**.
 
 The chatbot helps students and visitors get information about courses, admissions, hostel facilities, placements, campus facilities, transport, and other college-related services.
