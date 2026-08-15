@@ -103,3 +103,103 @@ This helps students and parents access college information quickly without manua
                   │
                   ▼
                 USER
+
+
+🔄 How It Works
+1️⃣ User asks a question
+
+The user enters a question through the chatbot interface.
+
+Example:
+
+What courses are available?
+2️⃣ Question is sent to FastAPI
+
+The frontend sends the user's question to the FastAPI backend using an API request.
+
+POST /ask
+3️⃣ FastAPI communicates with Vertex AI
+
+The backend sends the question to the Fine-Tuned Gemini model using the Google Gen AI SDK.
+
+4️⃣ Fine-Tuned AI model generates a response
+
+The Gemini model processes the question based on the information used during fine-tuning.
+
+5️⃣ Response is displayed
+
+The generated response is returned to the FastAPI backend and displayed in the chatbot interface.
+
+🧠 AI Model
+
+This project uses:
+
+Fine-Tuned Gemini 2.5 Flash
+
+The model is deployed and accessed through:
+
+Google Vertex AI
+Google Gen AI SDK
+
+The fine-tuned model helps the chatbot provide responses related specifically to the college information provided during the training process.
+
+🛠️ Technology Stack
+Backend
+Python
+FastAPI
+Uvicorn
+Pydantic
+AI
+Google Gemini 2.5 Flash
+Fine-Tuning
+Google Vertex AI
+Google Gen AI SDK
+Frontend
+HTML
+CSS
+JavaScript
+Cloud Deployment
+Google Cloud Platform
+Google Cloud Run
+Cloud Build
+Artifact Registry
+Version Control
+Git
+GitHub
+
+
+📁 Project Structure
+
+college-ai-assistant/
+│
+├── main.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── college_data.csv
+├── college_data_clean.csv
+│
+├── input.jsonl
+├── gemini_train.jsonl
+├── gemini_validation.jsonl
+│
+├── convert_to_jsonl.py
+├── convert_gemini_format.py
+├── start_tuning.py
+│
+└── test_tuned_model.py
+
+=========
+
+👨‍💻 Developer
+
+**R. Ssugumar, M.B.A**
+📧 Email: contact.sugumarai@gmail.com
