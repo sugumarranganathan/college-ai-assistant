@@ -199,6 +199,213 @@ college-ai-assistant/
 
 =========
 
+# 🔄 Complete Project Workflow
+
+The **Bright Future College AI Chatbot** consists of two major workflows:
+
+1. **Fine-Tuning the Gemini Model**
+2. **Using the Fine-Tuned Model in the AI Chatbot**
+
+---
+
+# 🧠 1. Fine-Tuning Workflow
+
+The Fine-Tuning process helps customize the Gemini model using college-specific information.
+
+```text
+        College Information
+               │
+               ▼
+     ┌──────────────────────┐
+     │   college_data.csv   │
+     │                      │
+     │ Courses              │
+     │ Admissions           │
+     │ Hostel               │
+     │ Placements           │
+     │ Campus Facilities    │
+     └──────────────────────┘
+               │
+               ▼
+     ┌──────────────────────┐
+     │   Data Cleaning      │
+     │                      │
+     │ college_data_clean   │
+     │        .csv          │
+     └──────────────────────┘
+               │
+               ▼
+     ┌──────────────────────┐
+     │ Data Format          │
+     │ Conversion           │
+     │                      │
+     │ Python Scripts       │
+     └──────────────────────┘
+               │
+               ▼
+     ┌──────────────────────┐
+     │ Training Dataset     │
+     │                      │
+     │ gemini_train.jsonl   │
+     └──────────────────────┘
+               │
+               ▼
+     ┌──────────────────────┐
+     │ Validation Dataset   │
+     │                      │
+     │gemini_validation.jsonl│
+     └──────────────────────┘
+               │
+               ▼
+     ┌─────────────────────────────┐
+     │     Vertex AI / Gemini      │
+     │                             │
+     │   Base Gemini 2.5 Flash     │
+     └─────────────────────────────┘
+               │
+               ▼
+     ┌─────────────────────────────┐
+     │       Fine-Tuning Job       │
+     │                             │
+     │  start_tuning.py            │
+     │  start_tuning_v2.py         │
+     └─────────────────────────────┘
+               │
+               ▼
+     ┌─────────────────────────────┐
+     │   Fine-Tuned Gemini Model   │
+     │                             │
+     │ College-Specific Knowledge  │
+     └─────────────────────────────┘
+               │
+               ▼
+     ┌─────────────────────────────┐
+     │        Model Endpoint       │
+     │                             │
+     │ Vertex AI Endpoint          │
+     └─────────────────────────────┘
+
+===========
+
+🔁 End-to-End Project Workflow
+
+This diagram shows the complete journey from college data to the deployed AI chatbot.
+
+                    COLLEGE DATA
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │  college_data.csv   │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │   Data Cleaning     │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Dataset Conversion  │
+              │   CSV → JSONL       │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Training Dataset    │
+              │ Validation Dataset  │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │    Gemini 2.5       │
+              │    Flash Model      │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │   Fine-Tuning Job   │
+              │    Vertex AI        │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Fine-Tuned Gemini   │
+              │       Model         │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Vertex AI Endpoint  │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │   FastAPI Backend   │
+              │      main.py        │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │  Chatbot Frontend   │
+              │ HTML + CSS + JS     │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │      Docker         │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │    Cloud Build      │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │ Artifact Registry   │
+              └─────────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │    Cloud Run        │
+              └─────────────────────┘
+                         │
+                         ▼
+                    👨‍🎓 USERS
+
+========
+Complete Flow in Simple Steps
+
+College Information
+        ↓
+Create Dataset
+        ↓
+Clean Dataset
+        ↓
+Convert Dataset to Gemini Format
+        ↓
+Create Training + Validation Data
+        ↓
+Fine-Tune Gemini 2.5 Flash
+        ↓
+Create Fine-Tuned Model Endpoint
+        ↓
+Integrate Endpoint with FastAPI
+        ↓
+Connect FastAPI with Chatbot UI
+        ↓
+Containerize Using Docker
+        ↓
+Deploy Using Cloud Build
+        ↓
+Store Container in Artifact Registry
+        ↓
+Deploy Application to Cloud Run
+        ↓
+Users Access AI Chatbot
+
+===========
+
 👨‍💻 Developer
 
 **R. Ssugumar, M.B.A**
