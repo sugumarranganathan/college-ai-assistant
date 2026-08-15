@@ -58,6 +58,23 @@ This helps students and parents access college information quickly without manua
 
 ---
 
+## 🛠️ Technology Stack
+
+| Technology | Usage |
+|---|---|
+| **Fine-Tuned Gemini 2.5 Flash** | Provides AI-powered and domain-specific responses to student and visitor questions. |
+| **Google Vertex AI** | Used to access, manage, and deploy the Fine-Tuned Gemini model. |
+| **Google Gen AI SDK** | Connects the FastAPI backend with the Gemini AI model and handles AI requests and responses. |
+| **FastAPI** | Builds the backend API and manages communication between the frontend and AI model. |
+| **Python** | Core programming language used for backend development, AI integration, data processing, and model-related operations. |
+| **HTML** | Creates the structure of the chatbot user interface. |
+| **CSS** | Designs and styles the chatbot interface, layout, sidebar, cards, and responsive UI. |
+| **JavaScript** | Handles user interactions, sends questions to the backend, and displays AI responses dynamically. |
+| **Docker** | Containerizes the application for consistent deployment. |
+| **Google Cloud Run** | Deploys and hosts the containerized AI chatbot application on Google Cloud. |
+
+---
+
 # Key Features
 
 - 🤖 AI-powered college information chatbot
