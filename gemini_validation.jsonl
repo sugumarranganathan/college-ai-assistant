@@ -1,0 +1,5 @@
+{"contents": [{"role": "user", "parts": [{"text": "Tell me about the college."}]}, {"role": "model", "parts": [{"text": "Bright Future College of Engineering is an engineering college located in Chennai, Tamil Nadu."}]}]}
+{"contents": [{"role": "user", "parts": [{"text": "Which engineering branches are available?"}]}, {"role": "model", "parts": [{"text": "The college offers programs in Computer Science, Artificial Intelligence, Mechanical, Civil, and Electronics Engineering."}]}]}
+{"contents": [{"role": "user", "parts": [{"text": "Can students stay in a hostel?"}]}, {"role": "model", "parts": [{"text": "Yes, hostel facilities are available for eligible students."}]}]}
+{"contents": [{"role": "user", "parts": [{"text": "Is placement assistance available?"}]}, {"role": "model", "parts": [{"text": "Yes, the college provides placement training and career support for students."}]}]}
+{"contents": [{"role": "user", "parts": [{"text": "What student facilities does the college provide?"}]}, {"role": "model", "parts": [{"text": "The college provides classrooms, laboratories, a library, computer facilities, sports facilities, and student support services."}]}]}
