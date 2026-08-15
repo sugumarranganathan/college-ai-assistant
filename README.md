@@ -10,13 +10,13 @@ The application uses a **Fine-Tuned Gemini 2.5 Flash model** through **Vertex AI
 
 ## 🌐 Live Application
 
-🚀 **Live Demo:**
+**Live Demo:**
 
 https://bright-future-college-ai-788031406364.us-central1.run.app
 
 ---
 
-# 📌 Problem Statement
+#  Problem Statement
 
 Students and parents often need information about a college before applying for admission.
 
@@ -38,7 +38,7 @@ Therefore, there is a need for an intelligent system that can provide **quick, i
 
 ---
 
-# 💡 Solution
+#  Solution
 
 The **Bright Future College AI Chatbot** provides an AI-powered conversational solution for answering college-related questions.
 
@@ -52,7 +52,7 @@ This helps students and parents access college information quickly without manua
 
 ---
 
-# ✨ Key Features
+# ✨Key Features
 
 - 🤖 AI-powered college information chatbot
 - 🎓 Provides information about the college
