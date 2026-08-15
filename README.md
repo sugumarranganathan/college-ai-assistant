@@ -56,7 +56,7 @@ This helps students and parents access college information quickly without manua
 
 ---
 
-# ✨Key Features
+# Key Features
 
 - 🤖 AI-powered college information chatbot
 - 🎓 Provides information about the college
